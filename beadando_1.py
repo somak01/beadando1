@@ -7,6 +7,9 @@ def game(num):
         try:
             points = input('2 szam  1-1000 kozott: ')
             point1,point2 = points.split(' ')
+            if int(point1)>1000 or int(point1)<1 or int(point2)<1 or int(point2)>1000:
+                print('ervenytelen szam')
+                continue
             player1 +=int(point1)
             player2 +=int(point2)
             if player1>player2:
