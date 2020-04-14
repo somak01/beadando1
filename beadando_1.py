@@ -17,7 +17,7 @@ def game(num):
             elif player2>player1:
                 print('player2 vezet {} ponttal'.format(player2 - player1))
             else:
-                print("az allas dontetlen, probald ujra")
+                print("az allas dontetlen")
             num-=1
         except ValueError:
             print('ervenytelen input')
