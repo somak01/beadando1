@@ -1,7 +1,10 @@
-list = [7,10,7,0,9,11,0,17,]
+# list = [7,10,7,0,9,11,0,17,]
 # list = [69,40,0,0,90,0,1]
 # list = [0,0,0,0,0,0,0,0,1]
+list = []
 def special_sort(list):
+    if len(list)==0:
+        return list
     atlag = sum(list)/len(list)
     smh = 0
     seged = []
