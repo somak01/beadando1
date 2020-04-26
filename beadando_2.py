@@ -20,6 +20,7 @@ def code_to_dict(code):
     for i in range(1,len(code), 2):
         list_keys.append('part'+str((i+1)//2))
         list_values.append(code[i-1:i+1])
-    dictionary = dict(zip(list_keys, list_values))
-    return dictionary.values()
-print(code_to_dict(code(valami)))
+    dictionary =dict(zip(list_keys, list_values))
+    print(dictionary)
+code_to_dict(code(valami))
+
