@@ -1,19 +1,23 @@
-# list = [7,10,7,0,9,11,0,17,]
+# list = [7,10,7,0,9,11,0,17,15,16,12]
 # list = [69,40,0,0,90,0,1]
-# list = [0,0,0,0,0,0,0,0,1]
-list = []
+list = [0,0,0,0,0,0,0,0,1]
+# list = []
+def sorting(list):
+    for i in range(0,len(list)):
+        for j in range(i+1, len(list)):
+            if list[i]>list[j]:
+                list[i],list[j]=list[j],list[i]
+    return list
 def special_sort(list):
     if len(list)==0:
         return list
     atlag = sum(list)/len(list)
     smh = 0
     seged = []
-    # list=[tag for tag in list if (tag>atlag or tag==0)]
     for elem in list:
         if elem<atlag:
             seged.append(elem)
-    list.sort()
-    print(seged)
+    list = sorting(list)
     for tag in seged:
         if tag==0:
             list.remove(tag)
