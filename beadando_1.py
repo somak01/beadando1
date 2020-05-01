@@ -16,9 +16,9 @@ def game(num):
             if num == 0:
                 break
             if player1>player2:
-                print('player1 vezet {} ponttal'.format(player1-player2))
+                print('Player1 vezet {} ponttal'.format(player1-player2))
             elif player2>player1:
-                print('player2 vezet {} ponttal'.format(player2 - player1))
+                print('Player2 vezet {} ponttal'.format(player2 - player1))
             else:
                 print("az allas dontetlen")
         except ValueError:

@@ -1,4 +1,5 @@
-valami = 'AABBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'
+# valami = 'AABBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'
+valami = ''
 
 def code_to_dict(szo):
     try:
@@ -36,6 +37,6 @@ def code_to_dict(szo):
         print(seged)
 
     except IndexError:
-        print('Letezzen a string')
+        return ''
 code_to_dict(valami)
 
