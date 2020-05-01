@@ -1,6 +1,8 @@
 import string
 
 def game(num):
+    if num <= 0:
+        return print('0 vagy negativ fordulos jatek nem letezik')
     player1 = 0
     player2 = 0
     while True:
@@ -34,7 +36,11 @@ def game(num):
 while True:
     try:
         rounds = int(input('add meg a korok szamat:' ))
-        game(rounds)
-        break
+        if rounds<=0:
+            print('0 vagy negativ fordulos jatek nem letezik')
+            continue
+        else:
+            game(rounds)
+            break
     except ValueError:
         print('hibas input')
