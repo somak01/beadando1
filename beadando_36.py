@@ -1,6 +1,6 @@
 # valami = 'AABBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'
-# valami = 'AAAABBBCCDAAA'
-valami = ''
+valami = 'AAAABBBCCDAAA'
+# valami = ''
 
 def code_to_dict(szo):
     try:
