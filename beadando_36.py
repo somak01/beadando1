@@ -1,5 +1,6 @@
 # valami = 'AABBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'
-valami = ''
+valami = 'AAAABBBCCDAAA'
+# valami = ''
 
 def code_to_dict(szo):
     try:
@@ -29,12 +30,12 @@ def code_to_dict(szo):
         kimenet = ''
         for ch in seged:
             if ch not in kimenet:
-                kimenet+=ch+dictionary[ch][0]
+                kimenet+=dictionary[ch][0]+ch
             else:
-                kimenet+=ch+dictionary[ch][kimenet.count(ch)]
+                kimenet+=dictionary[ch][kimenet.count(ch)]+ch
         print(kimenet)
-        print(dictionary)
-        print(seged)
+        # print(dictionary)
+        # print(seged)
 
     except IndexError:
         return ''
