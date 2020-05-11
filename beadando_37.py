@@ -12,7 +12,6 @@ def special_sort(list):
     if len(list)==0:
         return list
     atlag = sum(list)/len(list)
-    smh = 0
     seged = []
     for elem in list:
         if elem<atlag:
